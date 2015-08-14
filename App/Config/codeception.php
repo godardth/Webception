@@ -21,7 +21,8 @@ return array(
 
     'sites' => array(
 
-        'Webception'         => dirname(__FILE__) .'/../../codeception.yml',
+        'FullPlanner'       => '/var/www/fullplanner2/advanced/frontend/tests/codeception.yml',      
+        'Webception'        => dirname(__FILE__) .'/../../codeception.yml',
 
     ),
 
