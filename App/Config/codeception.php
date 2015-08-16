@@ -22,7 +22,7 @@ return array(
     'sites' => array(
 
         'FullPlanner'       => '/var/www/fullplanner2/advanced/frontend/tests/codeception.yml',
-        'Accounting'       => '/var/www/fullplanner2/advanced/frontend/modules/accounting/tests/codeception.yml',
+        'Accounting'        => '/var/www/fullplanner2/advanced/frontend/modules/accounting/tests/codeception.yml',
 
     ),
 
@@ -64,6 +64,10 @@ return array(
         'CodeGuy.php',
         '_bootstrap.php',
         '.DS_Store',
+        // Ignoring the default tests created by codeception
+        'AcceptanceTester.php',
+        'FunctionalTester.php',
+        'UnitTester.php',
     ),
 
     /*
