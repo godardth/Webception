@@ -22,6 +22,7 @@ return array(
     'sites' => array(
 
         'FullPlanner'       => '/var/www/fullplanner2/advanced/frontend/tests/codeception.yml',
+        'Accounting'       => '/var/www/fullplanner2/advanced/frontend/modules/accounting/tests/codeception.yml',
 
     ),
 
