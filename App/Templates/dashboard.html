@@ -38,7 +38,7 @@
 
                 <h4><strong>{{ type|capitalize }}</strong> ({{ files|length }} available)</h4>
 
-                <div class='row'>
+                <!--<div class='row'>
                     <div class='large-12 columns'>
                         <input type='checkbox' id='all_{{ type }}_toggle' class='all_toggle' checked>
                         <label for='all_{{ type }}_toggle'>
@@ -49,7 +49,7 @@
                             <em>Include {{ type|capitalize }} Tests</em>
                         </label>
                     </div>
-                </div>
+                </div>-->
 
                 {% for row in files|batch(2, '') %}
 
@@ -59,7 +59,7 @@
 
                         {% if file %}
 
-                            <div class="small-6 medium-6 large-6 columns test">
+                            <div class="small-12 medium-12 large-12 columns test">
 
                                 <form action="{{ urlFor('run', {'type': type, 'hash': file.hash}) }}" style='padding:0; margin:0;'>
 
